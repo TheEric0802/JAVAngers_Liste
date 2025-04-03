@@ -8,5 +8,12 @@ public class Main {
         for (Student student : students) {
             System.out.println(student);
         }
+
+        School school = new School("Neue Fische");
+        for (Student student : students) {
+            school.addStudent(student);
+        }
+
+        school.printStudents();
     }
 }
