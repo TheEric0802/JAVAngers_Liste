@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 public class School {
 
@@ -43,5 +44,14 @@ public class School {
         for (Student student : students) {
             System.out.println(student);
         }
+    }
+
+    public Student findStudent(UUID studentID) {
+        for (Student student : students) {
+            if (student.getStudentID().equals(studentID)) {
+                return student;
+            }
+        }
+        return null;
     }
 }

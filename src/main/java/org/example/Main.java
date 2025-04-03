@@ -18,5 +18,7 @@ public class Main {
         }
 
         school.printStudents();
+
+        System.out.println(school.findStudent(UUID.fromString("bdd7a9f5-7ab2-4cb6-ab75-280cf56067f2")));
     }
 }
