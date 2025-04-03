@@ -39,6 +39,10 @@ public class School {
         students.add(student);
     }
 
+    public void removeStudent(Student student) {
+        students.remove(student);
+    }
+
     public void printStudents() {
         System.out.println("Students of " + name + ":");
         for (Student student : students) {
