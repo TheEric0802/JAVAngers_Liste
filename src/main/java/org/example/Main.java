@@ -1,7 +1,12 @@
 package org.example;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        List<Student> students = List.of(new Student("John", "Doe"), new Student("Jane", "Doe"));
+        for (Student student : students) {
+            System.out.println(student);
+        }
     }
 }
