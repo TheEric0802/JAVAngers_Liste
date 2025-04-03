@@ -1,10 +1,13 @@
 package org.example;
 
 import java.util.List;
+import java.util.UUID;
 
 public class Main {
     public static void main(String[] args) {
-        List<Student> students = List.of(new Student("John", "Doe"), new Student("Jane", "Doe"));
+        List<Student> students = List.of(
+            new Student("John", "Doe", UUID.fromString("bdd7a9f5-7ab2-4cb6-ab75-280cf56067f2")),
+            new Student("Jane", "Doe"));
         for (Student student : students) {
             System.out.println(student);
         }

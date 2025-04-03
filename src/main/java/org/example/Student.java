@@ -9,10 +9,14 @@ public class Student {
     private String lastName;
     private UUID studentID;
 
-    public Student(String firstName, String lastName) {
+    public Student(String firstName, String lastName, UUID studentID) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.studentID = UUID.randomUUID();
+        this.studentID = studentID;
+    }
+
+    public Student(String firstName, String lastName) {
+        this(firstName, lastName, UUID.randomUUID());
     }
 
     public String getFirstName() {
